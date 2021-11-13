@@ -1,3 +1,4 @@
+//Assertion function
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -7,6 +8,7 @@ const assertEqual = function(actual, expected) {
   
 };
   
+//return true if both arrays are identical
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -19,6 +21,7 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
+//test cases
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);

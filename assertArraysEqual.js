@@ -10,7 +10,7 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
-
+// the assert function to test the equality of two arrays
 const assertArraysEqual = function(actualArray, expectedArray) {
   if (eqArrays(actualArray, expectedArray)) {
     console.log(`✅✅✅ Assertion Passed: ${actualArray} === ${expectedArray}`);

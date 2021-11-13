@@ -34,6 +34,7 @@ const middle = function(array) {
   }
 };
 
+//test cases
 assertArraysEqual(middle([1]), []);
 assertArraysEqual(middle([2, 2]), []);
 assertArraysEqual(middle([2, 8, 6]), [8]);

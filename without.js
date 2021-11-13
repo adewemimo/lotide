@@ -1,3 +1,4 @@
+//The test functions - eqArrays, and assertArraysEqual to check function without
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
