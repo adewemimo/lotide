@@ -35,5 +35,7 @@ const results1 = map(words, word => word[0]);
 
 //Test cases
 assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
+console.log('------');
 assertArraysEqual(map([4, 6, 8], num => num * 2), [8, 12, 16]);
+console.log('------');
 assertArraysEqual(map(['tin', 'smart', 'hard'], item => item.length), [3, 5, 4]);
