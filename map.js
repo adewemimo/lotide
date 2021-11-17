@@ -19,10 +19,10 @@ const assertArraysEqual = function(actualArray, expectedArray) {
   }
 };
 
-//function map that takes an array and a callback function and returns a new array of the results of the callback function
+//A higher order function map that takes an array and a callback function and returns a new array of the results of the callback function
 const words = ['ground', 'control', 'to', 'major', 'tom'];
 
-const map = function (array, callback) {
+const map = function(array, callback) {
   const results = [];
 
   for (let item of array) {
