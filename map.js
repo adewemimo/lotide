@@ -1,27 +1,4 @@
-// Test functions: eqArrays and assertArraysEqual
-const eqArrays = function(array1, array2) {
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-  
-const assertArraysEqual = function(actualArray, expectedArray) {
-  if (eqArrays(actualArray, expectedArray)) {
-    console.log(`✅✅✅ Assertion Passed: ${actualArray} === ${expectedArray}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actualArray} !== ${expectedArray}`);
-  }
-};
-
 //A higher order function map that takes an array and a callback function and returns a new array of the results of the callback function
-const words = ['ground', 'control', 'to', 'major', 'tom'];
-
 const map = function(array, callback) {
   const results = [];
 
@@ -31,11 +8,4 @@ const map = function(array, callback) {
   return results;
 };
 
-const results1 = map(words, word => word[0]);
-
-//Test cases
-assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
-console.log('------');
-assertArraysEqual(map([4, 6, 8], num => num * 2), [8, 12, 16]);
-console.log('------');
-assertArraysEqual(map(['tin', 'smart', 'hard'], item => item.length), [3, 5, 4]);
+module.exports = map;

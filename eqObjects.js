@@ -1,6 +1,6 @@
 const eqArrays = require('./eqArrays');
 // Returns true if both objects have identical keys with identical values.
-// Otherwise you get back a big fat false!
+// Otherwise return false.
 const eqObjects = (object1, object2) => {
   let object1Keys = Object.keys(object1);
   let object2Keys = Object.keys(object2);
